@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Music</title>
+<link rel="stylesheet" href="mineCSS/styleMainPage.css" type="text/css">
+<link rel="stylesheet" href="mineCSS/konkursyCSS.css" type="text/css" />
+<link rel="shortcut icon" href="Obrazy/icoT.ico" type="image/x-icon" />
+<script src="JavaScript/walidacja.js"></script>
+</head>
+
+<body onload="init()">
+<!-- Główny kontener -->   
+<div class="content">
+<nav>
+    <ul id="nav">
+                <li><a href="MainPage.html">Strona główna</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="Regulamin.html">Regulamin</a></li>
+                <li><a href="Konkursy.html">Konkursy</a></li>
+            </ul>           
+</nav>
+<!-- main -->
+<main>
+    <div class="konkurs">
+        <div class="uczestnicy">
+            <h3>Uczestnicy:</h3>
+            <div class="tabela-uczestnikow">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Imię</td>
+                            <td>Nazwisko</td>
+                            <td>e-mail</td>
+                            <td>Zespol</td>
+                            <td>nr. telefonu</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="regtable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="rejestracja">
+            <h3>PODAJ DANE</h3>
+            <form  method="post" enctype="text/plain" onsubmit="return sprawdz()"
+                   onreset="return restart()">
+                <table>
+                    <tr>
+                        <td>Imię:</td><td><input name="imie" id="imie"/></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input name="nazwisko" id="nazwisko"/></td>
+                    </tr>
+                    <tr>
+                        <td>e-mail:</td>
+                        <td><input name="email" id="email"/></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwa zespołu:</td>
+                        <td><input name="nzespolu" id="nzespolu"/></td> 
+                    </tr>
+                    <tr>
+                        <td>nr. telefonu:</td>
+                        <td><input name="ntel" id="ntel"/></td>
+                    </tr>
+                    <tr id="buttons">
+                        <td></td>
+                        <td><input type="submit" value="Wyślij " /><input type="reset" value=" Anuluj " /></td>
+                    </tr>
+                </table>
+                <div class="errors">
+                    <p id="imie_error" class="czerwone"></p>
+                    <p id="nazw_error" class="czerwone"></p>
+                    <p id="email_error" class="czerwone"></p>
+                    <p id="nzespolu_error" class="czerwone"></p>
+                    <p id="ntel_error" class="czerwone"></p>
+                </div>
+            </form>
+        </div>   
+    </div>
+</main>
+<!-- footer -->
+        <footer>
+        <p style="color: white; text-align: center; font-size: 12px;">Maciej Wadas</p>
+        </footer>
+        </div>
+    </body>
+</html>

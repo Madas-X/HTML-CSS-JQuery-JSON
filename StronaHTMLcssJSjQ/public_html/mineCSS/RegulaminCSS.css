@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-06-04, 15:02:07
+    Author     : Lenovo
+*/
+.regulamin{
+    border: 1px whitesmoke solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    background-color: black;
+    width: 90%;
+    height: auto;
+    color: white;
+    overflow-x: auto;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: left;
+}

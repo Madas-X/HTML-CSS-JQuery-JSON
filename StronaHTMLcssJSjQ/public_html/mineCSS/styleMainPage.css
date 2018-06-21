@@ -1,0 +1,129 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-04-29, 19:53:05
+    Author     : Lenovo
+*/
+body{
+    background-attachment: fixed;
+    background-image: url("../Obrazy/BackGround.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+}
+
+main{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+}
+@media screen and (min-width: 1200px) {
+    .content{
+    width: 85%;
+    height: auto;
+    margin: 0px auto auto auto;
+    background-color: rgba(54,54,54,0.9);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 1;
+}
+}
+@media screen and (max-width: 1200px) {
+.content{
+    width: 100%;
+    height: auto;
+    margin: 0px auto auto auto;
+    background-color: rgba(54,54,54,0.9);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 1;
+}
+}
+footer{
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2px 0 2px 0;
+    text-align:center;
+    background-color: black;
+    border-radius: 20px;
+} 
+#nav{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+    background: #363636;
+    text-align: center;
+    overflow: hidden;
+    font-family: tahoma;
+}
+#tresc1,#tresc2,#tresc3{
+    width: 90%;
+    background-color: black;
+    min-height: 100px;
+    margin: 10px auto auto auto;
+    color: whitesmoke;
+    padding: 5px 5px 5px 5px;
+}
+@media screen and (min-width: 640px){
+ul#nav li {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    float: left;
+    border-radius: 1px;
+    background: #9E9E9E;
+}}
+@media screen and (max-width: 640px) and (min-width: 480px){
+   ul#nav li {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    float: left;
+    border-radius: 1px;
+    background: #9E9E9E;
+}}
+@media screen and (max-width: 480px){
+   ul#nav li {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    float: left;
+    border-radius: 1px;
+    background: #9E9E9E;
+}
+}
+ul#nav li:hover {
+    text-decoration: none;
+    list-style-type: none;
+    float: left;
+    background: #D7D7D7;
+}
+ul#nav a {
+    display : block;
+    padding : 7pt;
+    text-decoration : none;
+}
+#nav a:link {
+    color: whitesmoke; text-decoration: none;}
+#nav a:visited {
+    color: whitesmoke; text-decoration: none;}
+#nav a:hover {
+    color: black; text-decoration: none;}
+#nav a:active {
+    color: red; text-decoration: none;}
